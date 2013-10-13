@@ -429,7 +429,7 @@ class Solr(object):
             # Tomcat doesn't produce a valid XML response
             soup = lxml.html.fromstring(response)
             body_node = soup.find('body')
-			if body_node is None:
+            if body_node is None:
                 print response
                 reason = 'TEST'
             else:
