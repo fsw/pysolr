@@ -430,7 +430,7 @@ class Solr(object):
             soup = lxml.html.fromstring(response)
             body_node = soup.find('body')
             if body_node is None:
-                print response
+                print(response)
                 reason = 'TEST'
             else:
                 p_nodes = body_node.cssselect('p')
